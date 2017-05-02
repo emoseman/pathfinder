@@ -13,6 +13,6 @@ public class Lithium
     extends BaseResource {
 
     public Lithium() {
-        super("Lithium", "A soft silver-white metal. ", 1.0F, new byte[0]);
+        super("Lithium", "A soft silver-white metal.  Seems to oxidize very quickly ", 2.0F, new byte[0]);
     }
 }

@@ -3,16 +3,16 @@ package PathFinder.resources;
 import PathFinder.model.BaseResource;
 
 /**
- * Water
+ * Lithium
  *
  * @author Evan Moseman (evan.moseman@corp.aol.com)
  * @version 1.0
  * @since 4/20/17
  */
-public class Water
+public class Copper
     extends BaseResource {
 
-    public Water() {
-        super("Water", "A bottle of water.  Seems safe to drink.", 0.0F, new byte[0]);
+    public Copper() {
+        super("Copper", "Something tells me that it's uses far surpass interesting sculptures.", 5.0F, new byte[0]);
     }
 }

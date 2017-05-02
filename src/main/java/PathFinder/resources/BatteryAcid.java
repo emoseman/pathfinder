@@ -15,8 +15,8 @@ public class BatteryAcid
     extends CompoundResource {
     public BatteryAcid() {
         super("Battery Acid",
-              "Liquid resource used as the primary component of a battery.",
-              1.0F,
+              "A jug of very powerful acid, it says on the lable 'harmful if swallowed'.",
+              0.0F,
               new byte[0],
               Arrays.asList(new Water(), new SulphuricAcid()));
     }
