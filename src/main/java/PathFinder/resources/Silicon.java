@@ -9,10 +9,10 @@ import PathFinder.model.BaseResource;
  * @version 1.0
  * @since 4/20/17
  */
-public class Silicone
+public class Silicon
     extends BaseResource {
 
-    public Silicone() {
-        super("Silicone", "For some reason all I want to build is a cone right now.", 2.0F, new byte[0]);
+    public Silicon() {
+        super("Silicon", "For some reason all I want to build is a cone right now.", 2.0F, new byte[0]);
     }
 }

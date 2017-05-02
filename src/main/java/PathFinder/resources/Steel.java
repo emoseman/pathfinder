@@ -1,6 +1,8 @@
 package PathFinder.resources;
 
-import PathFinder.model.BaseResource;
+import PathFinder.model.CompoundResource;
+
+import java.util.Arrays;
 
 /**
  * Lithium
@@ -10,9 +12,14 @@ import PathFinder.model.BaseResource;
  * @since 4/20/17
  */
 public class Steel
-    extends BaseResource {
+    extends CompoundResource {
 
     public Steel() {
-        super("Steel", "*Insert steel pun here*", 15.0F, new byte[0]);
+        super("Steel",
+              "*Insert steel pun here*",
+              15.0F,
+              new byte[0],
+              Arrays.asList(new CompoundComponent(new Carbon(), 1),
+                            new CompoundComponent(new Iron(), 10)));
     }
 }

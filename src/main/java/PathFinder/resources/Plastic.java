@@ -12,7 +12,7 @@ import PathFinder.model.BaseResource;
 public class Plastic
     extends BaseResource {
 
-    public Lithium() {
+    public Plastic() {
         super("Plastic", "A very light and cloudy resource. ", 1.0F, new byte[0]);
     }
 }

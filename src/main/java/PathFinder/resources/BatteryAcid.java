@@ -15,9 +15,10 @@ public class BatteryAcid
     extends CompoundResource {
     public BatteryAcid() {
         super("Battery Acid",
-              "A jug of very powerful acid, it says on the lable 'harmful if swallowed'.",
+              "A jug of very powerful acid, it says on the label 'harmful if swallowed'.",
               0.0F,
               new byte[0],
-              Arrays.asList(new Water(), new SulphuricAcid()));
+              Arrays.asList(new CompoundComponent(new Water(), 3),
+                            new CompoundComponent(new SulphuricAcid(), 1)));
     }
 }

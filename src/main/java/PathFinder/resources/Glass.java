@@ -12,7 +12,7 @@ import PathFinder.model.BaseResource;
 public class Glass
     extends BaseResource {
 
-    public Lithium() {
+    public Glass() {
         super("Glass", "A clear silicate composite.  Seems fragile. ", 8.0F, new byte[0]);
     }
 }

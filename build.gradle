@@ -7,14 +7,27 @@ sourceCompatibility = 1.8
 
 repositories {
     jcenter()
-    maven { url "http://dl.bintray.com/jmonkeyengine/com.jme3" }
+    maven { url "http://dl.bintray.com/jmonkeyengine/org.jmonkeyengine" }
     mavenCentral()
 }
 
-def jme3 = [v:'3.0.10', g:'com.jme3']
+sourceSets {
+    main {
+        java { srcDir 'src'}
+        resources { srcDir 'assets' }
+    }
+}
+
+def jme3 = [v:'3.1.0-stable', g:'org.jmonkeyengine']
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'PathFinder.PathFinder'
+}
 
 dependencies {
     compile "${jme3.g}:jme3-core:${jme3.v}"
+    compile "${jme3.g}:jme3-terrain:${jme3.v}"
+
     runtime "${jme3.g}:jme3-desktop:${jme3.v}"
     runtime "${jme3.g}:jme3-lwjgl:${jme3.v}"
 
