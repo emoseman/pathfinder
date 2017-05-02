@@ -13,6 +13,6 @@ public class Glass
     extends BaseResource {
 
     public Lithium() {
-        super("Glass", "A clear silicate composite. ", 8.0F, new byte[0]);
+        super("Glass", "A clear silicate composite.  Seems fragile. ", 8.0F, new byte[0]);
     }
 }
