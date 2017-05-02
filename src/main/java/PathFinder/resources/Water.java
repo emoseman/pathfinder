@@ -13,6 +13,6 @@ public class Water
     extends BaseResource {
 
     public Water() {
-        super("Water", "H2O", 1.0F, new byte[0]);
+        super("Water", "A bottle of water.  Seems safe to drink.", 0.0F, new byte[0]);
     }
 }
